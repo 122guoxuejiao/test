@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 1000px;
+        }
+        .div1{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px dashed #666;
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transition: all 1s ease;
+            transform-style:preserve-3d;
+           
+        }
+        .div2:hover{
+            transform: rotateY(180deg) 
+        }
+        .div3{
+            position: absolute;
+            top:0px;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            transition: all 1s ease;
+            transform: translateZ(-1px)
+        }
+        .ss{
+            position: absolute;
+            right:0;
+            transform: rotateY(180deg);
+            font-size:22px;
+        }
+        .cc{
+            font-size:22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div class="cc">唯创网讯</div>
+            <div class="div3">
+                <div class="ss">小伙伴</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
